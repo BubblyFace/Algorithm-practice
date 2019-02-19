@@ -8,7 +8,7 @@ class LRUCache:
 
     def put(self, key: 'int', value: 'int') -> 'None':
         
-
+    
 
 # Your LRUCache object will be instantiated and called as such:
 # obj = LRUCache(capacity)
