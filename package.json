@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/BubblyFace/Algorithm-practice/issues"
   },
-  "homepage": "https://github.com/BubblyFace/Algorithm-practice#readme"
+  "homepage": "https://github.com/BubblyFace/Algorithm-practice#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
 }
