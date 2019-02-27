@@ -1,4 +1,3 @@
-# Definition for a binary tree node.
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -6,15 +5,12 @@ class TreeNode:
         self.right = None
 
 class Solution:
-  def isBalanced(self, root: TreeNode) -> bool:
+  def isBanlance(self, root: TreeNode) -> bool:
       is_b = False
-      if root is None:
-          return  True
-
       height_l = self.getTreeHeight(root.left)
       height_r = self.getTreeHeight(root.right)
 
-      if self.isBalanced(root.left) and self.isBalanced(root.right) and abs(height_l - height_r) <= 1:
+      if self.isBanlance(root.left) and self.isBanlance(root.right) and abs(height_l - height_r) <= 1:
           is_b = True
       return  is_b
 
