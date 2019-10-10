@@ -6,13 +6,13 @@
 
 const path = require('path');
 
-const Creater = require('../src/js/lru_cache.js');
+const Creater = require('../src/js/min_stack.js');
 const dataProcessor = require('../utils/test_data_processor_js.js');
 
 
 
 (async() => {
-  let dataArray = await dataProcessor(path.join(__dirname, '../data/lru_cache.data'));
+  let dataArray = await dataProcessor(path.join(__dirname, '../data/min_stack.data'));
   dataArray.forEach(data => {
     handle(data, Creater);
   });
@@ -25,13 +25,18 @@ function handle(options, Creater) {
     expected 
   } = options;
 
-  let self = Object.create(Creater).createNew(...argument[0]);
+  // let self = Object.create(Creater).createNew(...argument[0]);
+  let self = new Creater()
   for (let i = 1; i < action.length; i++) {
     console.log(action[i], i);
+    if(i === 280) {
+      debugger
+    }
     let output = self[action[i]](...argument[i]);
     if(output === undefined) {
       output = null;
     }
+    
     if(output !== expected[i]) {
       console.info( `${action[i]} ${argument[i]} index:: ${i} -${output}::${expected[i]}`)
     }
