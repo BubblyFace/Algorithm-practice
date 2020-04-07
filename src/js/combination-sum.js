@@ -3,57 +3,49 @@
  * @param {number} target
  * @return {number[][]}
  */
-var combinationSum = function(candidates, target) {
-    var dict = {}
-    let rt = []
+var combinationSum = function (candidates, target) {
+    let results = [];
+    //to store the results that match the target
+    let combos = [];
+    //to store each combinations found each time
+    let index = 0;
+    //this will be used to track which number in candidates we are on
 
-    if(candidates.length === 0) {
-        return rt
-    }
+    //2.) Sort the candidates to prevent extra duplicates
+    candidates.sort((a, b) => a - b);
 
-    for(let i = 0; i < candidates.length; i ++ ) {
-        let num = candidates[i]
+    //3.) Next make a DFS-like function to traverse and recursive call;
+    dfsToTarget(candidates, target, results, combos, index);
+    return results;
 
-        if(num > target) {
-            continue
-        }
-
-        if(num === target) {
-            rt.push([target])
-        }
-
-
-        let sum = num
-        let tick = 1
-
-        while(sum <= target) {
-            let arr = new Array(tick).fill(num)
-            dict[sum] ? dict[sum].push(arr) : (dict[sum] = [arr]) 
-            sum += num
-            tick += 1
-        }
-    }
-
-    Object.keys(dict).forEach(key => {
-        if(Number(key) === target) {
-            rt.push(...dict[key])
-        }
-
-        if(dict[target - key]) {
-            for(let i = 0; i < dict[key].length; i ++) {
-                for(let j = 0; j < dict[target - key].length; j ++) {
-                    dict[key][i] !== dict[target - key][j] && rt.push(dict[key][i].concat(dict[target - key][j]))
-                }
-            }
-
-            dict[key] = dict[target - key] = null
-        }
-    })
-
-    return rt
 };
+
+//3.) cont... target will be updated in this function to calc the diff to find the other numbers
+let dfsToTarget = (candidates, target, results, combos, index) => {
+
+    //4.) Check: 
+    //if the target diff == 0, then push the combo to results
+    //if the target diff < 0, like 7 - (2,2,2,2) = -1, exit;
+    //else loop through and find the next combo
+    //in this else loop, don't forget to pop off the last combo to backtrack up one level 
+    if (target === 0) {
+        results.push(combos.slice());
+    } else if (target < 0) {
+        return;
+    } else {
+        for (let i = index; i < candidates.length; i++) {
+            const currNumber = candidates[i]; //the current number in candidates
+            combos.push(currNumber); //push this number to the combo stack to use to check that branch of combinations for that number
+            dfsToTarget(candidates, target - currNumber, results, combos, i);
+            combos.pop(); //backtrack
+        }
+    }
+};
+
+console.log(combinationSum([1, 2], 4));
 
 // unhandle case
 // 
 // [2,3,5]
 // 8
+// 去重要做或者半数上传就ok了

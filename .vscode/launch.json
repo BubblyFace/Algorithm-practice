@@ -10,6 +10,13 @@
       "name": "Debug Javascript",
       "console": "integratedTerminal",
       "program": "${workspaceFolder}/test/test_javascript.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "single Javascript",
+      "console": "integratedTerminal",
+      "program": "${workspaceFolder}/src/js/extend_with_create.js"
     }
   ]
 }
