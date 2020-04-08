@@ -32,7 +32,7 @@ var coinChange = function(coins, amount) {
                 (sum, index) => {
                     BFS(sum, deep + 1, index === copyArr.length - 1)
                 }
-            )
+            ) 
         }
     }
 
