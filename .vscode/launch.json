@@ -16,7 +16,7 @@
       "request": "launch",
       "name": "single Javascript",
       "console": "integratedTerminal",
-      "program": "${workspaceFolder}/src/js/extend_with_create.js"
+      "program": "${workspaceFolder}/src/js/coin_change.js"
     }
   ]
 }
