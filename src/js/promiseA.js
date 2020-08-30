@@ -177,6 +177,7 @@ Pm.prototype.race = function (pms) {
     })
 }
 
+// api 错误
 Pm.prototype.allSettled = function (pms) {
     let counts = pms.length
     let results = []
