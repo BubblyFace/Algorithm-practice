@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="997898c9-3228-4bdc-9b3a-f703511de930" name="Default" comment="8.14">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/python/LongestSubstringWithoutRepeatingCharacters.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/python/LongestSubstringWithoutRepeatingCharacters.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.valid_triangle_number">
+  <component name="RunManager" selected="Python.LongestSubstringWithoutRepeatingCharacters">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -194,6 +195,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="LongestSubstringWithoutRepeatingCharacters" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm-practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/python/LongestSubstringWithoutRepeatingCharacters.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Algorithm-practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -208,28 +231,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="fib" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Algorithm-practice" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/fib.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -406,19 +407,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.implement_strStr" />
-      <item itemvalue="Python.fib" />
       <item itemvalue="Python.n_th_primeNum" />
       <item itemvalue="Python.LIANJIA" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.valid_triangle_number" />
+      <item itemvalue="Python.LongestSubstringWithoutRepeatingCharacters" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.LongestSubstringWithoutRepeatingCharacters" />
         <item itemvalue="Python.valid_triangle_number" />
         <item itemvalue="Python.LIANJIA" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.n_th_primeNum" />
-        <item itemvalue="Python.fib" />
       </list>
     </recent_temporary>
   </component>
@@ -500,14 +501,30 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="523" y="462" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1581558214311" />
+    <state width="1035" height="245" key="GridCell.Tab.0.bottom" timestamp="1581843891535">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1035" height="245" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1581843891535" />
+    <state width="1035" height="245" key="GridCell.Tab.0.center" timestamp="1581843891535">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1035" height="245" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1581843891535" />
+    <state width="1035" height="245" key="GridCell.Tab.0.left" timestamp="1581843891535">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1035" height="245" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1581843891535" />
+    <state width="1035" height="245" key="GridCell.Tab.0.right" timestamp="1581843891535">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1035" height="245" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1581843891535" />
     <state x="244" y="350" key="SettingsEditor" timestamp="1581558233646">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="244" y="350" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1581558233646" />
-    <state x="710" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1581602308478">
+    <state x="710" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1581843290486">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="710" y="380" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1581602308478" />
+    <state x="710" y="380" key="com.intellij.ide.util.TipDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1581843290486" />
     <state x="818" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581472501548">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

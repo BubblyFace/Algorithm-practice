@@ -12,11 +12,11 @@ class Solution:
         # give a v to record longest
         length_max = 1
 
-        #handle special
-        if dict_len is 1:
-            return  length_max
+        # handle special
+        if dict_len == 1:
+            return length_max
 
-        if dict_len is len(s):
+        if dict_len == len(s):
             return len(s)
 
         # from start to record the number of unshow char, once they occur repeating. from the repeating char
@@ -36,6 +36,7 @@ class Solution:
                     dict[str[j]] = False
                     current_str = []
                     current_longest = 0
+
         return length_max
 
 
